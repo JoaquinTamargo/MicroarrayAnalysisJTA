@@ -1,5 +1,7 @@
 # Microarray Analysis in RStudio - Straightforward instructions by Affy
 
+#### Joaquín Tamargo Azpilicueta (joatamazp@alum.us.es), Universidad de Sevilla
+
 In this repository, I thoroughly analyze the microarray data from this article: A Genome-Wide Analysis of the Effects of Sucrose on Gene Expression in Arabidopsis Seedlings under Anoxia. *Plant Physiology*, 137(3), 1130-1138. doi: 10.1104/pp.104.057299. 
 
 Plants are constantly exposed to non-optimal edafic and climatic conditions that affect cell homeostasis and, ultimately, impair their growth and integrity. In order to survive, plants must adapt in the most effective way to this circumstances; i.e. specific differentiation or modulation of phisiologycal behaviour in response to stress signaling. Earlier, changes in genes expression model in some stress conditions had been identified such as anaerobic conditions, that rapidly trigger an adaptative response to hipoxia. These symptoms seem to be attenuated when exogen sugar is added.
