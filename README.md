@@ -56,4 +56,4 @@ For the bioinformatic analysis, these tools and packages have been used:
 14. Colin A. Smith (2019). annaffy: Annotation tools for Affymetrix biological metadata. R package version 1.56.0.
 15. Carlson M (2016). ath1121501.db: Affymetrix Arabidopsis ATH1 Genome Array annotation data (chip ath1121501). R package version 3.2.3.
 
-** There are two R scripts in Data folder that may be useful: `README.r` contains the download instructions for the packages used and `script.r`contains the R raw script.
+** There are two R scripts in Data folder that may be useful: `README.r` contains the download instructions for the packages used and `script.r`contains the R raw script.**
