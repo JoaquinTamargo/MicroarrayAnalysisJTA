@@ -34,7 +34,7 @@ Para poder comprender cómo tenía lugar a nivel transcriptómico esta atenuaci�
 
 Por ello, con el fin de conocer con más profundidad el rol de los azúcares en la adaptación a la anaerobiosis, en este artículo se hace uso del chip de microarrays de Affymetrix ATH1. Con él, se pudo determinar el efecto a nivel de expresión del genoma global de la anaerobiosis y del suministro de sacarosa exógena a plantas en esta circunstancia. Más aún, con experimentos auxiliares ajenos a la transcriptómica se validaron los resultados. La disponibilidad de azúcares exógenos aumenta la tolerancia a la anoxia, y este efecto no puede conseguirse con otros azúcares como glucosa (Figura 1).
 
-<img src="./Data/imagen1.png" alt="imagen" width="400"/>
+<img src="WorkingDirectory/Data/imagen1.png" alt="imagen" width="400"/>
 
 <span style="font-size:0.85em">**Figura 1.** Efectos de la sacarosa exógena en la supervivencia de las plántulas. Estas fueron germinadas durante 4 días con o sin sacarosa según el caso, tras lo que se transfirieron a una cámara de anoxia durante 1, 2 o 3 días. Figura tomada de Loreti et al. (2005).</span>
 
