@@ -8,7 +8,7 @@ Plants are constantly exposed to non-optimal edafic and climatic conditions that
 
 Lately, whole-transcriptomic analysis such as microarrays have made it possible to understand more profoundly which genes (and therefore, supposedly proteins) are implicated in that response. In the analysed article, Affymetrix ATH1 microarray chip is used to determine the whole-genome expression effect of hypoxia and supply of exogen sugar in this circumstance. Furthermore, I would like to underline that auxiliary experiments were carried out in the article in order to biologically prove the results provided by the transcriptomic experiment.
 
-The whole analysis have been done in R. To make it easy for the reader to corroborate the results in my script, packages have been compiled under. These packeges are: affy (1.62.0), affyPLM (1.60.0), simpleaffy (2.60.0), limma (3.40.6), annaffy (1.56.0) and Affymetrix ATH1 microarray annotation chip (ath1121501.db).
+The whole analysis have been done in R and can be found in the folder "WorkingDirectory", named as "TAREA 1 - Joaquín Tamargo Azpilicueta". To make it easy for the reader to corroborate the results in my script, packages have been compiled under. These packeges are: affy (1.62.0), affyPLM (1.60.0), simpleaffy (2.60.0), limma (3.40.6), annaffy (1.56.0) and Affymetrix ATH1 microarray annotation chip (ath1121501.db).
 
 ``` {r}
 if (!requireNamespace("BiocManager", quietly = TRUE))
