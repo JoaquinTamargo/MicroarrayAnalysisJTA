@@ -164,7 +164,7 @@ plot(qc(microarray.raw.data))
 ```
 
 
-![png](output_9_0.png)
+ <img src="/WorkingDirectory/Data/output_9_0.png" alt="imagen" width="400"/>
 
 
 <span style="font-size:0.85em"> **Figura 4. Resumen del control de calidad.** Se muestra, en la primera columna, el nombre del fichero de cada muestra. En la segunda columna, se representa el porcentaje de detección (sondas para las que se detecta fluorescencia) y la fluorescencia del fondo. En la tercera columna, se representan algunos valores relativos a posibles procesos de degradación del RNA. Los círculos y triángulos representan la proporción de fluorescencia entre los entremos 3' y 5' de los genes para *gapdh* y *actin*, respectivamente. Se espera que el extremo 3' esté sobreexpresado con respecto al extremo 5' por los propios procesos de síntesis de cDNA y degradación de RNA. No obstante, con procesos de degradación masiva se aprecia que el extremo 3' está muy altamente sobreexpresado con respecto al 5'. En <span style="color:blue">azul</span> aparecen las medidas que superan los estándares de calidad y en <span style="color:red">rojo</span> los que no.</span>
@@ -193,12 +193,9 @@ hist(microarray.raw.data,col=rainbow(8), cex.lab = 1.4, ylab = "Density")
 legend(x=11.5, y=0.5, legend = AffyRNAdeg(microarray.raw.data)$sample.names, col=rainbow(8), pch = 19)
 ```
 
+ <img src="/WorkingDirectory/Data/output_11_0.png" alt="imagen" width="400"/>
 
-![png](output_11_0.png)
-
-
-
-![png](output_11_1.png)
+ <img src="/WorkingDirectory/Data/output_11_1.png" alt="imagen" width="400"/>
 
 
 <span style="font-size:0.85em">**Figura 5.** Diagrama de cajas y bigotes (arriba) e histograma (abajo) de los datos crudos de microarrays. Las muestras han sido nombradas como GSM386 y un identificador del 13 al 18; las muestras 13 y 14 corresponden a las muestras en aerobiosis sin sacarosa; 15, 16, 17 y 18 en anaerobiosis, siendo la 15 y 16 sin sacarosa y la 17 y 18 con sacarosa.</span>
@@ -236,12 +233,11 @@ legend(x=10, y=0.25, legend = AffyRNAdeg(microarray.raw.data)$sample.names, col=
     Calculating Expression
 
 
-
-![png](output_13_1.png)
-
+<img src="/WorkingDirectory/Data/output_13_1.png" alt="imagen" width="400"/>
 
 
-![png](output_13_2.png)
+<img src="/WorkingDirectory/Data/output_13_2.png" alt="imagen" width="400"/>
+
 
 
 <span style="font-size:0.85em">**Figura 6.** Diagrama de cajas y bigotes (arriba) e histograma (abajo) de los datos ya preprocesados de microarrays. Las muestras han sido nombradas como GSM386 y un identificador del 13 al 18; las muestras 13 y 14 corresponden a las muestras en aerobiosis sin sacarosa; 15, 16, 17 y 18 en anaerobiosis, siendo la 15 y 16 sin sacarosa y la 17 y 18 con sacarosa.</span>
@@ -335,9 +331,7 @@ anaerobic conditions", x = aer.no.suc, y = ana.wi.suc,xlab="Aerobiosis - Sucrose
 
 ```
 
-
-![png](output_19_0.png)
-
+<img src="/WorkingDirectory/Data/output_19_0.png" alt="imagen" width="400"/>
 
 <span style="font-size:0.85em">**Figura 7.** Diagrama de dispersión de los datos de expresión media, donde cada punto representa un transcrito. Puntos que estén sobre la diagonal no se expresan de forma diferencial. Aquellos puntos que queden por encima son sobreexpresados en la segunda condición respecto a la primera. Contrariamente, aquellos puntos que quedan por debajo de la diagonal estarán reprimidos con respecto a la primera condición. </span>
 
