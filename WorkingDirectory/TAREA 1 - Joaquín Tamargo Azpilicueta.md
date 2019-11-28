@@ -55,7 +55,7 @@ Se usan homogeneizados de plántulas de *Arabidopsis thaliana* ecotipo Columbia 
 
 En suma, en este trabajo se validarán los datos de transcriptómica del artículo de Loreti et al. (2005), almacenados en el [accesion number GSE2133](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE2133 "GSE2133 Accesion Viewer") de la base de datos Gene Expression Omnibus [(GEO)](https://www.ncbi.nlm.nih.gov/geo/). Se analizará la calidad de los datos obtenidos, se normalizarán los datos para que sean comparables y se estimarán los niveles de expresión. A partir de ellos, se establecerán contrastes para poder, finalmente, conocer qué genes (y en la medida de lo posible, la función de las proteínas que codifiquen) son sobreexpresados o reprimidos en cada condición. Todos estos procesos se resumen en el siguiente flujo de trabajo:
 
-![jobflow.png](jobflow.png)
+ <img src="/WorkingDirectory/Data/jobflow.png" alt="imagen" width="400"/>
 
 De esta manera, en primer lugar se cargarán los datos descargados desde la plataforma Gene Expression Omnibus (GEO) del NCBI, accediendo al [accesion number GSE2133](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE2133 "GSE2133 Accesion Viewer"). *Se descargaron para el análisis los datos desde [aquí](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE2133&format=file)*. Se leerán los datos brutos con *ReadAffy* del paquete [*affy*](https://bioconductor.org/packages/release/bioc/html/affy.html) Con la función *cdfName* se muestra el código que identifica el diseño de la placa: [ATH1-121501](http://bioconductor.org/packages/release/data/annotation/html/ath1121501.db.html) y evaluando la variable microarray.raw.data generada tras usar la función *ReadAffy* se muestra la información de la placa, como el número de genes (22810).
 
