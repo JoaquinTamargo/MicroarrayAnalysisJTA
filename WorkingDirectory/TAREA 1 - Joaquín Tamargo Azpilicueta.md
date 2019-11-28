@@ -139,8 +139,7 @@ Anaerobiosis", cex.lab=1.55)
 image(microarray.raw.data[,6],col=rainbow(100), main = "")
 ```
 
-
-![png](output_5_0.png)
+ <img src="/WorkingDirectory/Data/output_5_0.png" alt="imagen" width="400"/>
 
 
 <span style="font-size:0.85em">**Figura 2.** </span> Aspecto general de los chips usados para los experimentos de microarrays.
@@ -152,7 +151,7 @@ image(microarray.raw.data[,1], col = rainbow(100), main = "- Sucrose     Aerobio
 ```
 
 
-![png](output_7_0.png)
+ <img src="/WorkingDirectory/Data/output_7_0.png" alt="imagen" width="400"/>
 
 
 <span style="font-size:0.85em">**Figura 3.** </span> Detalle del microarray correspondiente al fichero GSM38613, en condiciones de aerobiosis sin sacarosa. Se aprecia un buen estado de la placa más allá del prominente daño del centro propio del diseño mismo de la placa. Los distintos colores indican diferente intensidad de fluorescencia.
