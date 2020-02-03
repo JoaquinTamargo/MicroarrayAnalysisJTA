@@ -551,7 +551,7 @@ text(aer.no.suc["248138_at"]+0.3,ana.wi.suc["248138_at"]-0.3,"PDC2", col="black"
 </dl>
 
 
-<img src="/WorkingDirectory/Data/output_25_2.png" alt="imagen" width="400"/>
+<img src="/WorkingDirectory/Data/output_25_2.png" alt="imagen"/>
 
 
 <dl>
@@ -562,7 +562,7 @@ text(aer.no.suc["248138_at"]+0.3,ana.wi.suc["248138_at"]-0.3,"PDC2", col="black"
 </dl>
 
 
-<img src="/WorkingDirectory/Data/output_25_4.png" alt="imagen" width="400"/>
+<img src="/WorkingDirectory/Data/output_25_4.png" alt="imagen" />
 
 
 
@@ -575,7 +575,7 @@ text(aer.no.suc["248138_at"]+0.3,ana.wi.suc["248138_at"]-0.3,"PDC2", col="black"
 
 
 
-<img src="/WorkingDirectory/Data/output_25_6.png" alt="imagen" width="400"/>
+<img src="/WorkingDirectory/Data/output_25_6.png" alt="imagen" />
 
 
 <span style="font-size:0.85em">**Figura 7.** Diagrama de dispersión de los datos de expresión media, donde cada punto representa un transcrito. Puntos que estén sobre la diagonal no se expresan de forma diferencial. Se han seleccionado aquellos puntos que queden por encima y que superan el umbral 2 del fold-change (<span style="color:red">rojo</span>), es decir, que son sobreexpresados en la segunda condición respecto a la primera. Contrariamente, aquellos puntos que quedan por debajo de la diagonal y son menores que el umbral -2 del fold-change (<span style="color:blue">azul</span>) estarán reprimidos con respecto a la primera condición. </span>
@@ -636,7 +636,7 @@ anaerobic conditions", control.mean.expression = aer.no.suc, treat.mean.expressi
 
 
 
-<img src="/WorkingDirectory/Data/output_27_2.png" alt="imagen" width="400"/>
+<img src="/WorkingDirectory/Data/output_27_2.png" alt="imagen" />
 
 
 <span style="font-size:0.85em">**Figura 8.** Diagrama de dispersión de los datos de expresión media, donde cada punto representa un transcrito. Puntos que estén sobre la diagonal no se expresan de forma diferencial. Se han seleccionado aquellos puntos que queden por encima y que superan el umbral 4 del fold-change (<span style="color:red">rojo</span>), es decir, que son sobreexpresados en la segunda condición respecto a la primera. Contrariamente, aquellos puntos que quedan por debajo de la diagonal y son menores que el umbral -4 del fold-change (<span style="color:blue">azul</span>) estarán reprimidos con respecto a la primera condición. </span>
@@ -722,7 +722,7 @@ heatmap.2(normalized.DEG.expression,Colv=FALSE,dendrogram="row",
           col=heat.colors(100)[100:1],margins = c(8,8),cexCol=1.2)
 ```
 
-<img src="/WorkingDirectory/Data/output_29_0.png" alt="imagen" width="400"/>
+<img src="/WorkingDirectory/Data/output_29_0.png" alt="imagen"/>
 
 
 
@@ -734,13 +734,13 @@ En cuanto al clado central, se aprecian niveles de sobreexpresión de genes en l
 
 Quizás, uno de los patrones más interesantes para nuestro estudio sean los datos de expresión correspondientes al último clado. En él, se muestran genes que están muy reprimidos en condiciones aerobias, pero que se expresan en mayor o menor medida en condiciones anaerobias. Si atendemos a la parte más inferior de este último clado, se aprecia sobreexpresión de genes en la condición anaerobia con sacarosa que están más atenuados. Hay una gran diversidad de explicaciones para este fenómeno, pero desde hace años se conoce la existencia de formación de supercomplejos macromoleculares en la membrana interna mitocondrial para mejorar la eficiencia del transporte electrónico mitocondrial bajo condiciones de hipoxia[3] (Figura 10). Estas agrupaciones han recibido el nombre de *respirasomas* y siguen siendo un tema de interés científico en campos como la medicina puesto que tras él pueden subyacer algunas claves para entender algunas patologías humanas como la isquemia[4]. De la misma forma, bajo condiciones de hipoxia, es necesario optimizar el oxígeno usado en la respiración. Este metabolismo puede verse aumentado si se aporta de forma exógena un azúcar porque provocará un aumento de la tasa glucolítica y por tanto también de la oxidación por la ruta aerobia, de tal manera que podría hipotetizarse que este grupo de genes participarían en procesos metabólicos de este tipo.
 
-<img src="/WorkingDirectory/Data/gr3.jpg" alt="imagen" width="400"/>
+<img src="/WorkingDirectory/Data/gr3.jpg" alt="imagen" />
 
 <span style="font-size:0.85em">**Figura 10.** Moléculas de citocromo *c* viajando entre los complejos respiratorios. A) Modelo fluido del CIII dimérico (verde) y CIV dimérico (morado) embebidos en su membrana mitocondrial. B) Modelo sólido de CIII dimérico y CIV monomérico. P y D indican loso sitios de unión del citocromo proximal y distal, respectivamente, en cada complejo. "Pool" denota la población de citocromos en el espacio intermembrana. Las imágenes fueron creadas con el software UCFS Chimera usando las estructuras recogidas en la PDB para CIII, CIV (5XTH) y citocromo *c* (2N9I). Figura y texto adaptado de Pérez-Mejías, G., Guerra-Castellano, A., Díaz-Quintana, A., De la Rosa, M., & Díaz-Moreno, I. (2019). Cytochrome c: Surfing Off of the Mitochondrial Membrane on the Tops of Complexes III and IV. *Computational And Structural Biotechnology Journal*, 17, 654-660. doi: 10.1016/j.csbj.2019.05.002 </span>
 
 También es relevante en este último clado los genes de la parte superior, que aparecen muy representados en la condición de anaerobiosis sin azúcar pero con los mismos niveles de expresión en aerobiosis y cuando se aplica sacarosa a estas plantas sometidas a anaerobiosis. Estos genes serían los genes de interés de estudio, puesto que su sobreexpresión en plantas sometidas a anaerobiosis se ve reducida a niveles basales cuando se suministra sacarosa exógena.
 
-## 5. Anotación funcional y discusión
+## 5. Anotación funcional y discusión
 <a class="anchor" id="discusion"></a>
 
 Ya habiendo sido revisados superficialmente los datos de expresión, es necesario conocer profundamente qué genes particularmente son afectados en cada caso. Para ello, haremos uso de herramientas de ontología de genes. La ontología es el estudio de un objeto y sus relaciones dentro de un dominio del conocimiento. En este caso, la ontología de genes (GO, Gene Ontology) describe nuestro conocimiento del dominio biológico desde tres perspectivas:
@@ -765,7 +765,7 @@ En el diagrama, se representa con colores el p-valor, que abarca desde <10$^-$$^
 
 Con la herramienta [ReViGO](http://revigo.irb.hr/) (Reduce and Visualize GO) se elaboró un diagrama que agrupa los genes activados activados o reprimidos en función de su función biológica. En este caso, se modificó ligeramente el script original de ReViGO para obtener un archivo jpeg haciendo uso del script siguiente: [REVIGO_aer_no_ana_no_oe.r](./REVIGO_aer_no_ana_no_oe.r). Con el fin de simplificar, para los siguientes contrastes no se detalla el script, aunque se facilite el acceso a él desde un hipervínculo y se presente una figura con el resultado.
 
-<img src="/WorkingDirectory/Data/revigo_aer_no_ana_no_oe.jpeg" alt="Smiley face" height="960" width="720">
+<img src="/WorkingDirectory/Data/revigo_aer_no_ana_no_oe.jpeg" alt="Smiley face">
 
 
 ```R
@@ -833,16 +833,16 @@ Son, por tanto, muy evidentes los profundos cambios en el modelo de expresión g
 
 Dentro del GO:0071453, donde se encuentra la función de respuesta a niveles de oxígeno, se encuentran algunas proteínas de choque térmico (heat shock proteins, HSP), algunas de las cuales actúan como chaperonas ayudando al plegamiento correcto de las proteínas en condiciones de anoxia. Las proteínas de esta familia se encuentran sobrerrepresentadas en condiciones de anoxia. Algunas HSP son inducidas por hipoxia en animales, y un choque térmico moderado puede aumentar la resistencia a la hipoxia, como lo demuestran los autores tratando algunas de las plántulas durante 1.5 h antes de las 6 horas de anoxia incubándolas a 38 ºC. Este tratamiento aumentó la tolerancia a la ausencia de oxígeno, y la adición de sacarosa aumentó la producción de HSP (Figura 11).
 
-<img src="/WorkingDirectory/Data/hsp.png" alt="" height = "480" width = "360">
+<img src="/WorkingDirectory/Data/hsp.png" alt="" >
 
 <span style="font-size:0.85em">**Figura 11.** Efectos del tratamiento previo sobre la tolerancia a la anoxia en plántulas de *Arabidopsis*. Las semillas se trataron durante 1.5 h a 38 ºC antes del tratamiento de anoxia. Figura tomada de Loreti, E. et al. (2005).</span>
 
 
-#### *Genes reprimidos*
+#### *Genes reprimidos*
 
 <img src="/WorkingDirectory/Data/repressed_genes_Aer_no_Ana_no.png" alt="Activated Aer- Ana-">
 
-<img src="/WorkingDirectory/Data/revigo_aer_no_ana_no_re.jpeg" alt="" height="960" width="720">
+<img src="/WorkingDirectory/Data/revigo_aer_no_ana_no_re.jpeg" alt="">
 
 
 ```R
@@ -857,15 +857,15 @@ Se pueden descargar los archivos correspondientes a los [genes activados](activa
 
 #### *Genes activados*
 
-<img src="/WorkingDirectory/Data/revigo_ana_no_ana_wi_oe.jpeg" alt="" height="960" width="720">
+<img src="/WorkingDirectory/Data/revigo_ana_no_ana_wi_oe.jpeg" alt="">
 
 Un bajo número (250) de genes están sobreexpresados cuando se añade sacarosa a las plántulas. El efecto a nivel génico que este azúcar tiene está de alguna manera relacionado con la respuesta a estímulos abióticos, aumentando su respuesta al estrés.
 
 #### *Genes reprimidos*
 
-<img src="/WorkingDirectory/Data/repressed_genes_Ana_no_Ana_wi.png" alt="Activated Ana- Ana+" height="600" width="400">
+<img src="/WorkingDirectory/Data/repressed_genes_Ana_no_Ana_wi.png" alt="Activated Ana- Ana+">
 
-<img src="/WorkingDirectory/Data/revigo_ana_no_ana_wi_re.jpeg" alt="" height="960" width="720">
+<img src="/WorkingDirectory/Data/revigo_ana_no_ana_wi_re.jpeg" alt="">
 
 
 Por otro lado, en cuanto a la represión de genes, se ve cómo se afectan directamente los genes de respuesta a niveles de oxígeno que se activaban cuando se sometía a las plántulas a anaerobiosis. De esta manera, se observa que hay una inhibición muy clara de los genes de respuesta a hipoxia, disminuyendo así mismo su respuesta a los estímulos.
@@ -884,7 +884,7 @@ Se pueden descargar los archivos correspondientes a los [genes activados](activa
 
 <img src="/WorkingDirectory/Data/activated_genes_Aer_no_Ana_wi.png" alt="">
 
-<img src="/WorkingDirectory/Data/revigo_aer_no_ana_wi_oe.jpeg" alt="" height="960" width="720">
+<img src="/WorkingDirectory/Data/revigo_aer_no_ana_wi_oe.jpeg" alt="">
 
 <img src="/WorkingDirectory/Data/GO_3.png" alt="">
 
@@ -894,11 +894,11 @@ La respuesta celular desencadenada por las condiciones de anoxia debe ser algo m
 
 <img src="/WorkingDirectory/Data/repressed_genes_Aer_no_Ana_wi.png" alt="">
 
-<img src="/WorkingDirectory/Data/revigo_aer_no_ana_wi_re.jpeg" alt="" height="960" width="720">
+<img src="/WorkingDirectory/Data/revigo_aer_no_ana_wi_re.jpeg" alt="" >
 
 La adición de sacarosa a plántulas sometidas a hipoxia inhibe al expresión de genes relacionados con las vías de señalización activadas por auxina y a la respuesta a estímulos, como ocurría cuando no se añadía sacarosa. No obstante, la represión es menor cuando se añade sacarosa, como se explica en el artículo (Figura 12).
 
-<img src="/WorkingDirectory/Data/sucrose_auxin.png" alt="" height="480" width="360">
+<img src="/WorkingDirectory/Data/sucrose_auxin.png" alt="">
 
 <span style="font-size:0.85em">**Figura 12.** Genes significativamente reprimidos por la anoxia y anotados como genes codificantes de proteínas relacionadas con la fisiología de la auxina fueron seleccionados, y su cambio de expresión (*fold change*) bajo anoxia fue representado contra el cambio de expresión en condiciones de anoxia con sacarosa. Figura tomada de Loreti, E. et al. (2005).</span>
 
@@ -927,7 +927,7 @@ Affymetrix code | AGI CODE | Description | Abbreviation
 
 
 ```R
-## PRIMER CONTRASTE: AEROBIOSIS -SACAROSA / ANAEROBIOSIS -SACAROSA
+## PRIMER CONTRASTE: AEROBIOSIS -SACAROSA / ANAEROBIOSIS -SACAROSA
 
 DEGs.calling(condition.id = "Aer.no.Ana.no", contrast.results = contrast.results,
             gene.number = 22810, coef = 1, log2threshold = 1, title.plot = "Anaerobiosis effects",
@@ -1017,7 +1017,7 @@ text(aer.no.suc["263150_at"]+0.15,ana.wi.suc["263150_at"]+0.3,"HSPOx", col="char
 </dl>
 
 
-<img src="/WorkingDirectory/Data/output_42_1.png" alt="" height="960" width="720">
+<img src="/WorkingDirectory/Data/output_42_1.png" alt="" >
 
 
 
@@ -1031,7 +1031,7 @@ text(aer.no.suc["263150_at"]+0.15,ana.wi.suc["263150_at"]+0.3,"HSPOx", col="char
 
 
 
-<img src="/WorkingDirectory/Data/output_42_3.png" alt="" height="960" width="720">
+<img src="/WorkingDirectory/Data/output_42_3.png" alt="" >
 
 
 
@@ -1043,7 +1043,7 @@ text(aer.no.suc["263150_at"]+0.15,ana.wi.suc["263150_at"]+0.3,"HSPOx", col="char
 </dl>
 
 
-<img src="/WorkingDirectory/Data/output_42_5.png" alt="" height="960" width="720">
+<img src="/WorkingDirectory/Data/output_42_5.png" alt="">
 
 
 
