@@ -337,7 +337,7 @@ anaerobic conditions", x = aer.no.suc, y = ana.wi.suc,xlab="Aerobiosis - Sucrose
 
 En condiciones de anaerobiosis, no se aprecia un efecto muy sustancial cuando se añade sacarosa (Figura 7, centro) si se compara con los efectos que tiene la anaerobiosis (Figura 7, izquierda). No es fácilmente distinguible el efecto que tiene la sacarosa sobre las condiciones anaerobias (Figura 7, derecha), aunque es apreciable un aparente descenso de la sobreexpresión de algunos genes y una mayor represión de otros. Para poder determinar este efecto, y conocer en profundidad qué genes están afectados, se debe hacer una selección de los genes expresados de forma diferencial (DEGs).
 
-## 4. Análisis de expresión génica diferencial
+## 4. Análisis de expresión génica diferencial
 <a class="anchor" id="expresados"></a>
 
 [LIMMA](https://bioconductor.org/packages/release/bioc/html/limma.html) (*LInear Models for Microarray Analysis*) es un paquete de Bioconductor para el análisis de análisis de datos de expresión génica de microarrays, concretamente para la evaluación de la expresión diferencial. Para poder proceder a e la selección de genes diferencialmente expresados, primero se genera una matriz que represente el diseño experimental, asignando a cada condición experimental un número entero:
@@ -670,7 +670,7 @@ Text | [Descargar](repressed_genes_Aer_no_Ana_no.txt) | [Descargar](repressed_ge
 
 A continuación, podría ser útil representar en un diagramma de Venn aquellos genes diferencialmente expresados. Idealmente, podrían representarse los genes sobreexpresados (o reprimidos) por la presencia de sacarosa en condiciones aerobias y anaerobias. En la intersección de los dos círculos correspondientes a estos genes aparecerían genes que se sobreexpresan en ambos casos, independientemente de las condiciones de oxígeno; en el resto de ambos círculos quedarían los genes diferencialmente expresados únicamente en cada una de las condiciones por la presencia de sacarosa. No obstante, el diseño experimental de los estudios de transcriptómica de este artículo no incluía un control positivo para la adición de azúcar exógeno, de tal manera que la elaboración de este diagrama no es posible. 
 
-## Análisis del mapa de calor
+## Análisis del mapa de calor
 
 La elaboración de un mapa de calor permite la representación de los distintos genes diferencialmente expresados (DEGs) y su distinto nivel de expresión en cada una de las condiciones. Para ello, el primer paso que se lleva a cabo es el almacenamiento de los genes diferencialmente expresados en todas las condiciones en un vector donde no haya repeticiones de valores. Se extraen los niveles de expresión de los DEGs en cada una de las condiciones y se normaliza con la función *scale*. Finalmente, con *heatmap.2* del paquete [gplots](https://cran.r-project.org/web/packages/gplots/index.html), de [CRAN](https://cran.r-project.org/) se elabora el mapa de calor. Los dendrogramas a la izquierda del mapa de calor muestra cómo las distintas condiciones y los genes están agrupados independientemente. Los patrones en el mapa de calor, que muestra los valores para la expresión de cada condición y gen, indicarían una posible correlación. 
 
